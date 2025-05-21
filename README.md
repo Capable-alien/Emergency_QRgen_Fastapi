@@ -43,4 +43,3 @@ docker build -t emergency-qr-api .
 docker run -d -p 8000:8000 emergency-qr-api
 ```
 
-Visit: http://localhost:8000/docs
