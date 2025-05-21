@@ -1,6 +1,6 @@
 # Emergency QR Generator (FastAPI)
 
-Generate emergency QR codes containing critical medical and contact information that can be scanned and used in emergencies — even offline.
+Generate emergency QR codes containing critical medical and contact information that could be created early, then scanned and used in emergencies.
 
 ## Features
 
@@ -10,15 +10,37 @@ Generate emergency QR codes containing critical medical and contact information 
 - Dockerized for easy deployment
 - Future-ready: Can be extended to websites, apps, and printed cards
 
----
+# Setup Guide
 
-## 📁 Project Structure
+## Run the Project Locally
 
-emergency-qr-api/
-├── app/
-│   ├── main.py
-│   ├── schemas.py
-│   └── qrgen.py
-├── Dockerfile
-├── requirements.txt
-└── README.md
+### Step 1: Install Dependencies
+If you're not using Docker:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2: Run the FastAPI server
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Visit: http://localhost:8000/docs for the interactive FastAPI(Swagger UI)interface to test with few example data.
+
+## Running with Docker (Recommended)
+
+### Build the image:
+
+```bash
+docker build -t emergency-qr-api .
+```
+
+### Run the container:
+
+```bash
+docker run -d -p 8000:8000 emergency-qr-api
+```
+
+Visit: http://localhost:8000/docs
