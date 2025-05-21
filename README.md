@@ -16,9 +16,9 @@ Generate emergency QR codes containing critical medical and contact information 
 
 emergency-qr-api/
 ├── app/
-│ ├── main.py # FastAPI app with API routes
-│ ├── schemas.py # Pydantic models for validation
-│ └── qrgen.py # QR code generator logic
-├── Dockerfile # For containerized deployment
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+│   ├── main.py
+│   ├── schemas.py
+│   └── qrgen.py
+├── Dockerfile
+├── requirements.txt
+└── README.md
