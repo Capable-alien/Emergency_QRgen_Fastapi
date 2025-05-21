@@ -1,0 +1,1 @@
+# Emergency_QRgen_Fastapi
